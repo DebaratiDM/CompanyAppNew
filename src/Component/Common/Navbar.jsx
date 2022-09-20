@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -24,22 +24,26 @@ export const Navbar = () => {
           <nav className="nav-menu d-none d-lg-block">
             <ul>
               <li className="active">
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
 
               <li className="drop-down">
                 <a href="#">About</a>
+
                 <ul>
                   <li>
-                    <a href="about.html">About Us</a>
+
+                   <Link to="/aboutus">About Us</Link>
                   </li>
                   <li>
-                    <a href="team.html">Team</a>
+                  <Link to="/team">Team</Link>
+
                   </li>
-                  <li>
-                    <a href="testimonials.html">Testimonials</a>
+                  <li><Link to="/testimonials">Testimonials</Link>
+
                   </li>
                   <li className="drop-down">
+                    <Link to="/testimonials">Testimonials</Link>
                     <a href="#">Deep Drop Down</a>
                     <ul>
                       <li>
@@ -63,19 +67,19 @@ export const Navbar = () => {
               </li>
 
               <li>
-                <a href="services.html">Services</a>
+                <Link to="/services">Services</Link>
               </li>
               <li>
-                <a href="portfolio.html">Portfolio</a>
+                <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
-                <a href="pricing.html">Pricing</a>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>

@@ -29,15 +29,15 @@ export const Footer = () => {
                 <ul>
                   <li>
                     <i className="bx bx-chevron-right"></i>
-                    <Link to="#">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="#">About us</Link>
+                    <Link to="/about">About us</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="#">Services</Link>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
