@@ -1,23 +1,32 @@
 import React from "react";
 
-export const Portfolio = () => {
+const Portfoliomain = () => {
   return (
     <>
+    <section id="breadcrumbs" className="breadcrumbs">
+    <div className="container">
+
+      <div className="d-flex justify-content-between align-items-center">
+        <h2>Portfolio Details</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Portfolio Details</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
       <section id="portfolio" className="portfolio">
         <div className="container">
-          <div className="section-title">
-            <h2>Portfolio</h2>
-          </div>
-
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter="*" className="filter-active">
+                <li className-filter="*" className="filter-active">
                   All
                 </li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
+                <li className-filter=".filter-app">App</li>
+                <li className-filter=".filter-card">Card</li>
+                <li className-filter=".filter-web">Web</li>
               </ul>
             </div>
           </div>
@@ -34,7 +43,7 @@ export const Portfolio = () => {
                 <p>App</p>
                 <a
                   href="assets/img/portfolio/portfolio-1.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="App 1"
                 >
@@ -61,7 +70,7 @@ export const Portfolio = () => {
                 <p>Web</p>
                 <a
                   href="assets/img/portfolio/portfolio-2.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Web 3"
                 >
@@ -88,7 +97,7 @@ export const Portfolio = () => {
                 <p>App</p>
                 <a
                   href="assets/img/portfolio/portfolio-3.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="App 2"
                 >
@@ -115,7 +124,7 @@ export const Portfolio = () => {
                 <p>Card</p>
                 <a
                   href="assets/img/portfolio/portfolio-4.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Card 2"
                 >
@@ -142,7 +151,7 @@ export const Portfolio = () => {
                 <p>Web</p>
                 <a
                   href="assets/img/portfolio/portfolio-5.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Web 2"
                 >
@@ -169,7 +178,7 @@ export const Portfolio = () => {
                 <p>App</p>
                 <a
                   href="assets/img/portfolio/portfolio-6.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="App 3"
                 >
@@ -196,7 +205,7 @@ export const Portfolio = () => {
                 <p>Card</p>
                 <a
                   href="assets/img/portfolio/portfolio-7.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Card 1"
                 >
@@ -223,7 +232,7 @@ export const Portfolio = () => {
                 <p>Card</p>
                 <a
                   href="assets/img/portfolio/portfolio-8.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Card 3"
                 >
@@ -250,7 +259,7 @@ export const Portfolio = () => {
                 <p>Web</p>
                 <a
                   href="assets/img/portfolio/portfolio-9.jpg"
-                  data-gall="portfolioGallery"
+                  className-gall="portfolioGallery"
                   className="venobox preview-link"
                   title="Web 3"
                 >
@@ -271,3 +280,5 @@ export const Portfolio = () => {
     </>
   );
 };
+
+export default Portfoliomain;
